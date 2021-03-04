@@ -20,6 +20,10 @@ function onServerResponse(data){
 
 // Function to format the CSS selector
 function getLabElementId(id){
-    var labElementId = '#lab_' + id;
+
+    //! ERROR FIX (should just be #)
+    var labElementId = '#' + id;
+    console.log(labElementId);
     return labElementId;
 }
+
