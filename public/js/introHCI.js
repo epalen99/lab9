@@ -18,11 +18,9 @@ function onServerResponse(data){
 }
 
 
-// Function to format the CSS selector
+// Function to format the CSS selector --ERROR FIX: should be "lab-" instead of "lab_"
 function getLabElementId(id){
-
-    //! ERROR FIX (should just be #)
-    var labElementId = '#' + id;
+    var labElementId = '#lab-' + id;
     console.log(labElementId);
     return labElementId;
 }
